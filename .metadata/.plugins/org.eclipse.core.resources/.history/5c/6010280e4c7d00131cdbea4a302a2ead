@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class RoundingNumbers {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("y = x + 0.5");
+		System.out.println("Enter a number for x.");
+		double x = input.nextInt();
+		double z = x+.5;
+		double y  = Math.floor(x+.5);
+		
+		System.out.println("The original answer is " +z);
+		System.out.println("The rounded answer is "+y);
+
+	}
+
+}

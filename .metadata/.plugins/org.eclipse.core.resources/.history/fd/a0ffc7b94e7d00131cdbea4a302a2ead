@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class RoundingNumbers 
+{
+
+	public static void main(String[] args) 
+	{
+		
+		double x = 0;
+		double y = 0;
+		double z = 0;
+		
+		
+		roundingToInteger(x,y,z);
+		
+	}	
+		public static void roundingToInteger(double x, double y, double z)
+		{
+		// a. Rounding to Integer
+			
+			Scanner input = new Scanner(System.in);
+			System.out.println("y = x + 0.5");
+			System.out.println("Enter a number for x.");
+			x = input.nextDouble();
+			z = x+.5;
+			y  = Math.floor(x+.5);
+		
+		System.out.println("The original answer is " +z);
+		System.out.println("The rounded answer is "+y);
+		
+		//b. Rounding to Tenths
+		System.out.println("y = (x * 10 + 0.5");
+		}
+	
+
+}

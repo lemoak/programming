@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+
+public class parkingCharges 
+{
+
+	public static void main(String[] args) 
+	{
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Hours Parked:");
+		double time = input.nextInt();
+		calculateCharges(time);
+		
+		
+		
+		
+		
+		
+		
+	}	
+		public static void calculateCharges(double time)
+		{
+			
+		
+
+	}
+
+}

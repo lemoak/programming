@@ -1,0 +1,68 @@
+import java.util.Scanner;
+
+
+public class parkingCharges 
+{
+
+	public static void main(String[] args) 
+	{
+		
+		Scanner input = new Scanner(System.in);
+		Scanner input2 = new Scanner(System.in);
+		
+		System.out.println("Number of Cars Parked:");
+		int cars = input2.nextInt();
+		System.out.println("Hours Parked:");
+		double time = input.nextInt();
+		calculateCharges(time, cars);
+		
+		
+		
+		
+		
+		
+		
+	}	
+		public static void calculateCharges(double time, int cars)
+		{
+			Scanner input3 = new Scanner(System.in);
+			System.out.println("Input the hours for each car parked.");
+			for(int i =1; i<=cars; i++)
+			{
+				double hours = input3.nextInt();
+			}
+			
+			
+			
+			
+		double amount;	
+			
+		if(time<=-1)
+			System.out.println("Error. You cannot park a negative amount of time, dummy.");
+		if(time>-1)
+			if(time<=3)
+		{
+			amount = 2;
+			System.out.println("The price was $"+amount);
+		}
+		
+		if(time>3)
+			if(time<24)
+			{
+				amount = (time*.5)+2;
+				System.out.println("The price was $"+amount);
+			}
+		
+		if(time==24)
+		{
+			amount = 10;
+			System.out.println("The price was $"+amount);
+		}
+		if(time>24)
+			System.out.println("Error: 24 is the maximum amount of time you can park.");
+		
+			
+
+	}
+
+}
